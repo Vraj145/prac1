@@ -1,0 +1,23 @@
+<h2>{{title}}</h2>
+<div class="container">
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th><button class="btn btn-primary" (click)='toggleImage()'>{{showImage ? 'hide' : 'show'}} Image</button></th>
+      <th scope="col"> productId</th>
+      <th scope="col">ProductName</th>
+      <th scope="col">Price</th>    
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td><img *ngIf='showImage' class="imgsize" [src]="product.imgUrl" /></td>
+      <td>{{product.productId}}</td>
+      <td>{{product.ProductName}}</td>
+      <td>{{product.Price}}</td>
+     
+    </tr>
+  </tbody>
+</table>
+</div>

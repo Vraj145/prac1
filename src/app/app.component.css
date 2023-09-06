@@ -1,0 +1,13 @@
+.imgsize{
+    width: 20px;
+}
+th,td{
+    text-align: center;
+}
+table{
+    width: 50%;
+    margin: 0px auto;
+}
+.container{
+    text-align: center;
+}
